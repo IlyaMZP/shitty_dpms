@@ -78,13 +78,14 @@ int main(int argc, char **argv)
 	while(1)
         {
                 sysinfo(&s_info);
-                timer = s_info.uptime - prevtime;
 
                 if (reset)
                 {
                         prevtime = s_info.uptime;
                         reset = false;
                 }
+
+		timer = s_info.uptime - prevtime;
 
                 if (timer >= OffTime)
                         system("xset dpms force off  &>/dev/null");
