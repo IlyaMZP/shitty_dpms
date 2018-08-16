@@ -9,19 +9,19 @@
 long timer, prevtime;
 bool reset;
 
-void read_input(int byteAmount, char *infile)
+void read_input(int byteAmount, char *infile) //https://stackoverflow.com/questions/21692936
 {
 	char ch;
 	int count = 0;
 	FILE *fp;
 	fp = fopen(infile, "r");
-	if( fp == NULL )
+	if (fp == NULL)
 	{
 		fprintf(stderr, "Error while opening the file.\n");
 		exit(EXIT_FAILURE);
 	}
 
-	while( ( ch = fgetc(fp) ) != EOF || count < byteAmount)
+	while ((ch = fgetc(fp)) != EOF || count < byteAmount)
 	{
 		count++;
 	}
