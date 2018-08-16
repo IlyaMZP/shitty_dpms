@@ -10,3 +10,7 @@ Created in hopes to fix Xorg's DPMS that often stops working.
 # Usage
 
 `# dpms OffTime path_to_keyboard_dev`
+
+# Licence
+
+CC0. Do whatever you like with the code. And please don't mention me.
