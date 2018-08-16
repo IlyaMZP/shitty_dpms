@@ -6,7 +6,6 @@
 #include <stdbool.h>
 #include <unistd.h>
 
-long timer, prevtime;
 bool reset;
 
 void read_input(int byteAmount, char *infile) //https://stackoverflow.com/questions/21692936
@@ -65,7 +64,8 @@ int main(int argc, char **argv)
 
 	int OffTime = atoi(argv[1]);
 	char *keyboard_path = argv[2];
-
+	
+	long timer, prevtime;
 	struct sysinfo s_info;
 	sysinfo(&s_info);
 	prevtime = s_info.uptime;
