@@ -1,7 +1,7 @@
 # Shitty DPMS
 
 Simple and crude DPMS implementation relying only on mice and keyboard.
-Created in hopes to fix Xorg's DPMS that often stops working.
+Created in hopes to replace Xorg's DPMS that often stops working.
 
 # Compilation
 
