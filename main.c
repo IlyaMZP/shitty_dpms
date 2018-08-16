@@ -63,7 +63,7 @@ int main(int argc, char **argv)
 
 	int OffTime = atoi(argv[1]);
 	char *keyboard_path = argv[2];
-	
+
 	long timer, prevtime;
 	struct sysinfo s_info;
 	sysinfo(&s_info);
